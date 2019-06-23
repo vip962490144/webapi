@@ -1,0 +1,5 @@
+2019-06-23 18:36:14,971 - [INFO] - test_web_01_userRegister - test_case - [日志信息]
+Running Test Method: test_case_01
+2019-06-23 18:36:15,746 - [ERROR] - test_web_01_userRegister - test_case - [日志信息]具体异常为：'fail_code'
+2019-06-23 18:36:15,901 - [INFO] - test_web_01_userRegister - test_case - [日志信息]
+***************注册功能用例执行结束***************
