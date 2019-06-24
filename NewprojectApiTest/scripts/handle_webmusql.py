@@ -42,7 +42,7 @@ class HandleWebMysql:
         :param mobile:待判断的手机号，为字符串类型
         :return: True or False
         """
-        sql = "SELECT `Fverify_code` FROM {} WHERE Fmobile_no = {}".format(db_table, mobile)
+        sql = "SELECT * FROM {} WHERE Fmobile_no = {}".format(db_table, mobile)
         if self(sql):
             return True
         else:
@@ -55,8 +55,8 @@ class HandleWebMysql:
         """
         while True:
             one_mobile = self.create_moblie()
-            db = do_config("web api", "db") + one_mobile['mobile'][9:]
-            table = do_config("web api", "table") + one_mobile['mobile'][8]
+            db = do_config("web api", "db") + one_mobile[-2:]
+            table = do_config("web api", "table") + one_mobile[8]
             db_table = db + "." + table
             if not self.is_existed_mobile(db_table, one_mobile):
                 break
@@ -87,7 +87,7 @@ class HandleWebMysql:
         :param mobile:
         :return:
         """
-        sql = "SELECT `Fverify_code` FROM {} WHERE Fmobile_no = {}".format(db_table, mobile)
+        sql = "SELECT * FROM {} WHERE Fmobile_no = {}".format(db_table, mobile)
         return self(sql)
 
     def close(self):
@@ -101,14 +101,15 @@ class HandleWebMysql:
 
 if __name__ == '__main__':
 
-    do_mysql = HandleWebMysql()
-    sql = "SELECT `Fverify_code` FROM %s WHERE Fmobile_no = `%s`"
-
-    db = do_config("web api", "db") + "34"
-    table = do_config("web api", "table") + '7'
-    db_table1 = db + '.' + table
-    mobile1 = 13078423734
-    res = do_mysql.is_existed_captcha(db_table1, mobile1)
-    # res = do_mysql(sql, arg=(db_table, mobile,))['Fverify_code']
-    print(res)
-    do_mysql.close()
+    # do_mysql = HandleWebMysql()
+    # sql = "SELECT `Fverify_code` FROM %s WHERE Fmobile_no = `%s`"
+    #
+    # db = do_config("web api", "db") + "34"
+    # table = do_config("web api", "table") + '7'
+    # db_table1 = db + '.' + table
+    mobile1 = '13078423734'
+    # res = do_mysql.is_existed_captcha(db_table1, mobile1)
+    # # res = do_mysql(sql, arg=(db_table, mobile,))['Fverify_code']
+    # print(res)
+    # do_mysql.close()
+    print(mobile1[9:])

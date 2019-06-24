@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 import re
-from scripts.handle_pymusql import HandleMysql
+from scripts.handle_webmusql import HandleWebMysql
 from scripts.handle_config import HandleConfig
 from scripts.constants import CONFIG_USER_FILE_PATH
 
@@ -22,6 +22,8 @@ class HandleContext:
     load_id_pattern = re.compile(r"\$\{loan_id}")
     not_exited_user_id_pattern = re.compile(r"\$\{not_exited_user_id}")
     not_exited_loan_id_pattern = re.compile(r"\$\{not_exited_loan_id}")
+    exited_fverify_code_pattern = re.compile(r"\$\{fverify_code}")
+    exited_mobile_tel_pattern = re.compile(r"\$\{mobile_tel}")
 
     @classmethod
     def not_exited_replace(cls, data):
@@ -30,13 +32,9 @@ class HandleContext:
         :param data:
         :return:
         """
-        do_mysql = HandleMysql()
+        do_mysql = HandleWebMysql()
         if re.search(cls.not_exited_pattern, data):
             data = re.sub(cls.not_exited_pattern, do_mysql.create_not_mobile(), data)
-        if re.search(cls.not_exited_user_id_pattern, data):
-            data = re.sub(cls.not_exited_user_id_pattern, do_mysql.create_not_user_id(), data)
-        if re.search(cls.not_exited_loan_id_pattern, data):
-            data = re.sub(cls.not_exited_loan_id_pattern, do_mysql.create_not_load_id(), data)
         do_mysql.close()
         return data
 
@@ -80,6 +78,32 @@ class HandleContext:
         return data
 
     @classmethod
+    def exited_mobile_tel(cls, data):
+        """
+        替换，放入load_id
+        :param data:
+        :return:
+        """
+        if re.search(cls.exited_mobile_tel_pattern, data):
+            mobile_num = str(getattr(cls, "mobile_num"))
+            data = re.sub(cls.exited_mobile_tel_pattern, mobile_num, data)
+
+        return data
+
+    @classmethod
+    def exited_fverify_code(cls, data):
+        """
+        替换，放入load_id
+        :param data:
+        :return:
+        """
+        if re.search(cls.exited_fverify_code_pattern, data):
+            captcha_num = str(getattr(cls, "captcha_num"))
+            data = re.sub(cls.exited_fverify_code_pattern, captcha_num, data)
+
+        return data
+
+    @classmethod
     def register_parameterization(cls, data):
         """
         实现注册功能的参数化
@@ -100,6 +124,8 @@ class HandleContext:
         data = cls.borrow_user_replace(data)
         # 在替换标的id信息。
         data = cls.load_id_replace(data)
+        data = cls.exited_mobile_tel(data)
+        data = cls.exited_fverify_code(data)
         return data
 
 

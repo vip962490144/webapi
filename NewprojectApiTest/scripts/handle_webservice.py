@@ -48,7 +48,8 @@ class HandleWebservice:
             res = suds.sudsobject.asdict(res)
         except Exception as e:
             do_log.error("出现异常：{}".format(e))
-            res = {"fail_code": "fail"}
+            res = dict(e.fault)
+            # res = {"fail_code": "fail"}
         return res
 
 

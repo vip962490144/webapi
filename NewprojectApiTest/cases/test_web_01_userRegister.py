@@ -47,48 +47,51 @@ class HandleuserRegister(unittest.TestCase):
         do_log.info("\nRunning Test Method: {}".format(inspect.stack()[0][3]))
         case_id = data_ceses.case_id
         msg = data_ceses.title
-        data_case = HandleContext.register_parameterization(data_ceses.data)
-        new_data = json.loads(data_case)
+        case_data = HandleContext.register_parameterization(data_ceses.data)
+        new_data = json.loads(case_data)
         do_client = HandleWebservice()
-        actual = do_client(method=data_ceses.method, data=new_data)
+        method = data_ceses.method
+        actual = do_client(method=method, data=new_data)
         run_success_msg = do_config("msg", "success_result")
         run_fail_msg = do_config("msg", "fail_result")
         check_sql = data_ceses.check_sql
         if check_sql:
-            mobile = new_data['mobile']
-            # 获取excel中data数据输入的手机号。
-            db = do_config("web api", "db") + new_data['mobile'][-2:]
-            table = do_config("web api", "table") + new_data['mobile'][8]
-            db_table = db + "." + table
+            if method == "sendMCode":
+                mobile = new_data['mobile']
+                # 获取excel中data数据输入的手机号。
+                db = do_config("web api", "db") + new_data['mobile'][-2:]
+                table = do_config("web api", "table") + new_data['mobile'][8]
+                db_table = db + "." + table
 
-            actual_captcha = HandleWebMysql().is_existed_captcha(db_table, mobile)
-            HandleContext.mobile = mobile
-            HandleContext.captcha = actual_captcha
+                actual_sql = HandleWebMysql().is_existed_captcha(db_table, mobile)
+                HandleContext.mobile_num = actual_sql["Fmobile_no"]
+                HandleContext.captcha_num = actual_sql["Fverify_code"]
             try:
                 self.assertEqual(data_ceses.expected, actual["retInfo"], msg="测试{}失败".format(msg))
             except AssertionError as e:
                 do_log.error("具体异常为：{}".format(e))
-                do_excel.write_result(row=case_id + 1, actual=json.dumps(actual), result=run_fail_msg)
+                do_excel.write_result(row=case_id + 1, actual=str(actual), result=run_fail_msg)
                 raise e
             else:
-                do_excel.write_result(row=case_id + 1, actual=json.dumps(actual), result=run_success_msg)
+                do_excel.write_result(row=case_id + 1, actual=str(actual), result=run_success_msg)
         else:
             try:
-                self.assertEqual(data_ceses.expected, actual["fail_code"], msg="测试{}失败".format(msg))
+                self.assertEqual(data_ceses.expected, actual["faultstring"], msg="测试{}失败".format(msg))
             except AssertionError as e:
                 do_log.error("具体异常为：{}".format(e))
-                do_excel.write_result(row=case_id + 1, actual=json.dumps(actual), result=run_fail_msg)
+                do_excel.write_result(row=case_id + 1, actual=str(actual), result=run_fail_msg)
                 raise e
             except KeyError as e:
                 do_log.error("具体异常为：{}".format(e))
-                do_excel.write_result(row=case_id + 1, actual=json.dumps(actual), result=run_fail_msg)
+                do_excel.write_result(row=case_id + 1, actual=str(actual), result=run_fail_msg)
+                raise e
             else:
-                do_excel.write_result(row=case_id + 1, actual=json.dumps(actual), result=run_success_msg)
+                do_excel.write_result(row=case_id + 1, actual=str(actual), result=run_success_msg)
 
 
 if __name__ == '__main__':
     unittest.main()
-    # data = {"verify_code": "123456" ,"user_id": "1", "channel_id": "1", "pwd": "123456",
+    # data = {"Fverify_code": "123456" ,"user_id": "1", "channel_id": "1", "pwd": "123456",
     # "mobile": "18322221234", "ip": "1.1.1.1"}
     # data = '{"client_ip": "192.168.3.1", "tmpl_id": "1", "mobile": "18366661234"}'
     #

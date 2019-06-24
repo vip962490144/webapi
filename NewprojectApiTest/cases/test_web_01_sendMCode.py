@@ -67,22 +67,23 @@ class HandlesendMCode(unittest.TestCase):
                 self.assertEqual(data_ceses.expected, actual["retInfo"], msg="测试{}失败".format(msg))
             except AssertionError as e:
                 do_log.error("具体异常为：{}".format(e))
-                do_excel.write_result(row=case_id + 1, actual=json.dumps(actual), result=run_fail_msg)
+                do_excel.write_result(row=case_id + 1, actual=str(actual), result=run_fail_msg)
                 raise e
             else:
-                do_excel.write_result(row=case_id + 1, actual=json.dumps(actual), result=run_success_msg)
+                do_excel.write_result(row=case_id + 1, actual=str(actual), result=run_success_msg)
         else:
             try:
-                self.assertEqual(data_ceses.expected, actual["fail_code"], msg="测试{}失败".format(msg))
+                self.assertEqual(data_ceses.expected, actual["faultstring"], msg="测试{}失败".format(msg))
             except AssertionError as e:
                 do_log.error("具体异常为：{}".format(e))
-                do_excel.write_result(row=case_id + 1, actual=json.dumps(actual), result=run_fail_msg)
+                do_excel.write_result(row=case_id + 1, actual=str(actual), result=run_fail_msg)
                 raise e
             except KeyError as e:
                 do_log.error("具体异常为：{}".format(e))
-                do_excel.write_result(row=case_id + 1, actual=json.dumps(actual), result=run_fail_msg)
+                do_excel.write_result(row=case_id + 1, actual=str(actual), result=run_fail_msg)
+                raise e
             else:
-                do_excel.write_result(row=case_id + 1, actual=json.dumps(actual), result=run_success_msg)
+                do_excel.write_result(row=case_id + 1, actual=str(actual), result=run_success_msg)
 
 
 if __name__ == '__main__':
