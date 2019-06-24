@@ -1,5 +1,0 @@
-2019-06-11 22:57:54,384 - [INFO] - test_05_invest - test_case - [日志信息]
-Running Test Method: test_invest
-2019-06-11 22:57:54,826 - [ERROR] - handle_requests - test_case - [日志信息]将json转换为python时，出现异常：Expecting ',' delimiter: line 1 column 49 (char 48)
-2019-06-11 22:57:54,827 - [INFO] - test_05_invest - test_case - [日志信息]
-***************投资功能用例执行结束***************
