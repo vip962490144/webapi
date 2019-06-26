@@ -1,8 +1,2 @@
-2019-06-24 18:14:14,773 - [INFO] - test_web_01_userRegister - test_case - [日志信息]
-***************开始执行注册功能用例***************
-2019-06-24 18:14:15,984 - [INFO] - test_web_01_userRegister - test_case - [日志信息]
-Running Test Method: test_case_01
-2019-06-24 18:14:17,530 - [INFO] - test_web_01_userRegister - test_case - [日志信息]
-Running Test Method: test_case_01
-2019-06-24 18:14:18,888 - [INFO] - test_web_01_userRegister - test_case - [日志信息]
+2019-06-26 18:05:42,614 - [INFO] - test_web_01_userRegister - test_case - [日志信息]
 ***************注册功能用例执行结束***************

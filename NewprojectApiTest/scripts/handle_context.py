@@ -39,6 +39,19 @@ class HandleContext:
         return data
 
     @classmethod
+    def not_exited_user_id_replace(cls, data):
+        """
+        把data参数中的匹配模式数据替换。使用未注册的手机号替换。
+        :param data:
+        :return:
+        """
+        do_mysql = HandleWebMysql()
+        if re.search(cls.not_exited_user_id_pattern, data):
+            data = re.sub(cls.not_exited_user_id_pattern, do_mysql.create_not_user_id(), data)
+        do_mysql.close()
+        return data
+
+    @classmethod
     def invest_user_replace(cls, data):
         if re.search(cls.invest_user_pattern, data):
             data = re.sub(cls.invest_user_pattern, str(do_config("invest_user", "mobilephone")), data)
@@ -80,7 +93,7 @@ class HandleContext:
     @classmethod
     def exited_mobile_tel(cls, data):
         """
-        替换，放入load_id
+        替换，放入未注册手机号
         :param data:
         :return:
         """
@@ -93,7 +106,7 @@ class HandleContext:
     @classmethod
     def exited_fverify_code(cls, data):
         """
-        替换，放入load_id
+        替换，放入验证码
         :param data:
         :return:
         """
@@ -112,10 +125,7 @@ class HandleContext:
         """
         # 先替换未注册的手机号,load_id号，user_id号。
         data = cls.not_exited_replace(data)
-        # 先替换未注册的手机号
-        data = cls.not_exited_replace(data)
-        # 先替换未注册的手机号
-        data = cls.not_exited_replace(data)
+        data = cls.not_exited_user_id_replace(data)
         # 再替换投标的人员的手机号，也可以当做已注册的人员信息。
         data = cls.invest_user_replace(data)
         # 再替换管理员的手机号

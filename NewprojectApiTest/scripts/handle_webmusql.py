@@ -81,6 +81,32 @@ class HandleWebMysql:
 
         return result
 
+    @staticmethod
+    def create_user_id():
+        one_str = "0123456789"
+        num = "".join(random.sample(one_str, 9))
+        return num
+
+    def is_existed_user_id(self, user_id):
+        """
+        判断给定的user_id号在数据库中是否存在
+        :param user_id:待判断的id号，为字符串类型
+        :return: True or False
+        """
+        sql = "SELECT * FROM user_db.t_user_info WHERE Fuser_id = %s"
+        if self(sql, arg=(user_id, )):
+            return True
+        else:
+            return False
+
+    def create_not_user_id(self):
+        while True:
+            user_id = self.create_user_id()
+            if not self.is_existed_user_id(user_id):
+                break
+
+        return user_id
+
     def is_existed_captcha(self, db_table, mobile):
         """
         判断手机号存在，则返回该用户的用户验证码
