@@ -83,8 +83,9 @@ class HandleWebMysql:
 
     @staticmethod
     def create_user_id():
+        # start_helder = "小王"
         one_str = "0123456789"
-        num = "".join(random.sample(one_str, 9))
+        num = "".join(random.sample(one_str, 4))
         return num
 
     def is_existed_user_id(self, user_id):
@@ -116,6 +117,27 @@ class HandleWebMysql:
         sql = "SELECT * FROM {} WHERE Fmobile_no = {}".format(db_table, mobile)
         return self(sql)
 
+    def is_existed_fuser_id(self, user_id):
+        """
+        判断给定的user_id号在数据库中是否存在
+        :param user_id:待判断的id号，为字符串类型
+        :return: True or False
+        """
+        sql = "SELECT * FROM user_db.t_user_info WHERE Fuser_id = %s"
+        res = self(sql, arg=(user_id, ))["Fauth_id"]
+        if res is None:
+            return True
+        else:
+            return False
+
+    def create_not_fuser_id(self):
+        while True:
+            user_id = self.create_user_id()
+            if not self.is_existed_fuser_id(user_id):
+                break
+
+        return user_id
+
     def close(self):
         """
         关闭游标，关闭连接
@@ -127,15 +149,16 @@ class HandleWebMysql:
 
 if __name__ == '__main__':
 
-    # do_mysql = HandleWebMysql()
-    # sql = "SELECT `Fverify_code` FROM %s WHERE Fmobile_no = `%s`"
+    do_mysql = HandleWebMysql()
+    sql = "SELECT * FROM user_db.t_user_info WHERE Fuser_id = 16024978"
     #
     # db = do_config("web api", "db") + "34"
     # table = do_config("web api", "table") + '7'
     # db_table1 = db + '.' + table
-    mobile1 = '13078423734'
+    # mobile1 = '13078423734'
     # res = do_mysql.is_existed_captcha(db_table1, mobile1)
-    # # res = do_mysql(sql, arg=(db_table, mobile,))['Fverify_code']
-    # print(res)
-    # do_mysql.close()
-    print(mobile1[9:])
+    # res = do_mysql(sql, arg=(db_table, mobile,))['Fverify_code']
+    res = do_mysql.create_not_fuser_id()
+    print(res)
+    do_mysql.close()
+    # print(mobile1[9:])
