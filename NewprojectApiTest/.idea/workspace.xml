@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b01c202-a1fa-4051-afdd-0f435bd0e5de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cases/test_web_03_verifiedUserAuth.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cases/test_web_01_userRegister.py" beforeDir="false" afterPath="$PROJECT_DIR$/cases/test_web_02_userRegister.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/test.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/test.log.1" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/test.log.1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/test.log.2" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/test.log.2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/test.log.3" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/test.log.3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cases/test_web_01_sendMCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/cases/test_web_01_sendMCode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cases/test_web_02_userRegister.py" beforeDir="false" afterPath="$PROJECT_DIR$/cases/test_web_02_userRegister.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cases/test_web_03_verifiedUserAuth.py" beforeDir="false" afterPath="$PROJECT_DIR$/cases/test_web_03_verifiedUserAuth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datas/cases.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/datas/cases.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/handle_context.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/handle_context.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/handle_webmusql.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/handle_webmusql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/handle_webservice.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/handle_webservice.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,36 +23,105 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/FjnaceAPITest$Unittests_in_test_01_Login_py.coverage" NAME="Unittests in test_01_Login.py Coverage Results" MODIFIED="1560257437549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
-    <SUITE FILE_PATH="coverage/NewprojectApiTest$test_web_01_sendMCode.coverage" NAME="test_web_01_sendMCode Coverage Results" MODIFIED="1561363441793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
-    <SUITE FILE_PATH="coverage/NewprojectApiTest$Unittests_in_test_web_01_sendMCode_py.coverage" NAME="Unittests in test_web_01_sendMCode.py Coverage Results" MODIFIED="1561370008171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
+    <SUITE FILE_PATH="coverage/NewprojectApiTest$Unittests_in_test_web_03_verifiedUserAuth_py.coverage" NAME="Unittests in test_web_03_verifiedUserAuth.py Coverage Results" MODIFIED="1562049398225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
+    <SUITE FILE_PATH="coverage/NewprojectApiTest$handle_webservice.coverage" NAME="handle_webservice Coverage Results" MODIFIED="1562039401491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/NewprojectApiTest$Unittests_in_test_web_01_sendMCode_py.coverage" NAME="Unittests in test_web_01_sendMCode.py Coverage Results" MODIFIED="1562037386947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
     <SUITE FILE_PATH="coverage/FjnaceAPITest$Unittests_in_test_05_invest_py.coverage" NAME="Unittests in test_05_invest.py Coverage Results" MODIFIED="1560264920597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
-    <SUITE FILE_PATH="coverage/NewprojectApiTest$handle_webmusql.coverage" NAME="handle_webmusql Coverage Results" MODIFIED="1561976838833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/NewprojectApiTest$handle_webmusql.coverage" NAME="handle_webmusql Coverage Results" MODIFIED="1562049049705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/FjnaceAPITest$Unittests_in_test_web_01_sendMCode1_py.coverage" NAME="Unittests in test_web_01_sendMCode.py Coverage Results" MODIFIED="1561285525424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
+    <SUITE FILE_PATH="coverage/FjnaceAPITest$Unittests_in_test_01_Login_py.coverage" NAME="Unittests in test_01_Login.py Coverage Results" MODIFIED="1560257437549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
+    <SUITE FILE_PATH="coverage/NewprojectApiTest$run_test.coverage" NAME="run_test Coverage Results" MODIFIED="1562049537093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NewprojectApiTest$test_web_01_sendMCode.coverage" NAME="test_web_01_sendMCode Coverage Results" MODIFIED="1561363441793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
+    <SUITE FILE_PATH="coverage/NewprojectApiTest$Unittests_in_test_web_02_userRegister_py.coverage" NAME="Unittests in test_web_02_userRegister.py Coverage Results" MODIFIED="1562039507713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
     <SUITE FILE_PATH="coverage/FjnaceAPITest$run_test.coverage" NAME="run_test Coverage Results" MODIFIED="1560950777062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FjnaceAPITest$handle_webmusql.coverage" NAME="handle_webmusql Coverage Results" MODIFIED="1560952075052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
-    <SUITE FILE_PATH="coverage/FjnaceAPITest$Unittests_in_test_web_01_sendMCode1_py.coverage" NAME="Unittests in test_web_01_sendMCode.py Coverage Results" MODIFIED="1561285525424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
     <SUITE FILE_PATH="coverage/FjnaceAPITest$Unittests_in_test_web_01_userRegister_py.coverage" NAME="Unittests in test_web_01_userRegister.py Coverage Results" MODIFIED="1561286170869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
+    <SUITE FILE_PATH="coverage/NewprojectApiTest$Unittests_for_test_web_03_verifiedUserAuth_HandleverifiedUserAuth_test_case_01.coverage" NAME="Unittests for test_web_03_verifiedUserAuth.HandleverifiedUserAuth.test_case_01 Coverage Results" MODIFIED="1562049133959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
     <SUITE FILE_PATH="coverage/FjnaceAPITest$handle_webservice.coverage" NAME="handle_webservice Coverage Results" MODIFIED="1561285309978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/NewprojectApiTest$Unittests_in_test_web_01_userRegister_py.coverage" NAME="Unittests in test_web_01_userRegister.py Coverage Results" MODIFIED="1561543530783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cases/test_web_03_verifiedUserAuth.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-27">
-              <caret line="37" column="16" lean-forward="true" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+            <state relative-caret-position="1458">
+              <caret line="65" column="78" selection-start-line="65" selection-start-column="78" selection-end-line="65" selection-end-column="78" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/run_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+              <folding>
+                <element signature="e#25#54#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libs/ddt.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4293">
+              <caret line="164" selection-start-line="164" selection-end-line="164" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://E:/Python37/Lib/unittest/case.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17523">
+              <caret line="662" selection-start-line="662" selection-end-line="662" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://E:/Python37/Lib/unittest/suite.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3186">
+              <caret line="121" selection-start-line="121" selection-end-line="121" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/handle_webmusql.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="162" column="20" lean-forward="true" selection-start-line="162" selection-start-column="20" selection-end-line="162" selection-end-column="20" />
+            <state relative-caret-position="3645">
+              <caret line="138" column="49" lean-forward="true" selection-start-line="138" selection-start-column="49" selection-end-line="138" selection-end-column="49" />
               <folding>
                 <element signature="e#42#56#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/handle_webservice.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1566">
+              <caret line="62" column="58" lean-forward="true" selection-start-line="62" selection-start-column="58" selection-end-line="63" selection-end-column="17" />
+              <folding>
+                <element signature="e#114#125#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/handle_context.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4104">
+              <caret line="155" column="32" selection-start-line="155" selection-start-column="8" selection-end-line="155" selection-end-column="32" />
+              <folding>
+                <element signature="n#!!doc" />
+                <element signature="e#42#51#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -62,22 +140,23 @@
         <option value="$PROJECT_DIR$/cases/test_03_recharge.py" />
         <option value="$PROJECT_DIR$/cases/test_04_add.py" />
         <option value="$PROJECT_DIR$/cases/test_05_invest.py" />
-        <option value="$PROJECT_DIR$/run_test.py" />
         <option value="$PROJECT_DIR$/scripts/handle_musql.py" />
         <option value="$PROJECT_DIR$/configs/config.conf" />
         <option value="$PROJECT_DIR$/scripts/handle_client.py" />
         <option value="$PROJECT_DIR$/scripts/handle_pymusql.py" />
         <option value="$PROJECT_DIR$/cases/test_web_01_sendMCode1.py" />
-        <option value="$PROJECT_DIR$/scripts/handle_webservice.py" />
+        <option value="$PROJECT_DIR$/cases/test_web_01_userRegister.py" />
+        <option value="$PROJECT_DIR$/cases/test_web_02_userRegister.py" />
         <option value="$PROJECT_DIR$/cases/test_web_01_sendMCode.py" />
         <option value="$PROJECT_DIR$/scripts/handle_context.py" />
-        <option value="$PROJECT_DIR$/cases/test_web_01_userRegister.py" />
         <option value="$PROJECT_DIR$/cases/test_web_03_verifiedUserAuth.py" />
+        <option value="$PROJECT_DIR$/scripts/handle_webservice.py" />
         <option value="$PROJECT_DIR$/scripts/handle_webmusql.py" />
+        <option value="$PROJECT_DIR$/run_test.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="140" />
     <option name="width" value="1418" />
     <option name="height" value="866" />
@@ -88,32 +167,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="NewprojectApiTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NewprojectApiTest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NewprojectApiTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NewprojectApiTest" type="462c0819:PsiDirectoryNode" />
-              <item name="cases" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NewprojectApiTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NewprojectApiTest" type="462c0819:PsiDirectoryNode" />
-              <item name="datas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NewprojectApiTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NewprojectApiTest" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -145,7 +199,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.handle_webmusql">
+  <component name="RunManager" selected="Python.run_test">
     <configuration name="handle_webmusql" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="FjnaceAPITest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -168,7 +222,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="handle_webservice" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="run_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="FjnaceAPITest" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -176,12 +230,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/handle_webservice.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -190,29 +244,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_web_01_sendMCode" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="FjnaceAPITest" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Administrator\FinaceAPITest\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cases" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cases/test_web_01_sendMCode.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests in test_web_01_sendMCode.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_web_03_verifiedUserAuth.HandleverifiedUserAuth.test_case_01" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="FjnaceAPITest" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -223,8 +255,8 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/cases/test_web_01_sendMCode.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;test_web_03_verifiedUserAuth.HandleverifiedUserAuth.test_case_01&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Unittests in test_web_02_userRegister.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -242,20 +274,35 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests in test_web_03_verifiedUserAuth.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="FjnaceAPITest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cases" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/cases/test_web_03_verifiedUserAuth.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.handle_webmusql" />
-      <item itemvalue="Python.handle_webservice" />
-      <item itemvalue="Python.test_web_01_sendMCode" />
-      <item itemvalue="Python tests.Unittests in test_web_01_sendMCode.py" />
+      <item itemvalue="Python.run_test" />
       <item itemvalue="Python tests.Unittests in test_web_02_userRegister.py" />
+      <item itemvalue="Python tests.Unittests in test_web_03_verifiedUserAuth.py" />
+      <item itemvalue="Python tests.Unittests for test_web_03_verifiedUserAuth.HandleverifiedUserAuth.test_case_01" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.run_test" />
+        <item itemvalue="Python tests.Unittests in test_web_03_verifiedUserAuth.py" />
+        <item itemvalue="Python tests.Unittests for test_web_03_verifiedUserAuth.HandleverifiedUserAuth.test_case_01" />
         <item itemvalue="Python.handle_webmusql" />
         <item itemvalue="Python tests.Unittests in test_web_02_userRegister.py" />
-        <item itemvalue="Python tests.Unittests in test_web_01_sendMCode.py" />
-        <item itemvalue="Python.test_web_01_sendMCode" />
-        <item itemvalue="Python.handle_webservice" />
       </list>
     </recent_temporary>
   </component>
@@ -279,43 +326,45 @@
       <workItem from="1561543762825" duration="32000" />
       <workItem from="1561601590339" duration="635000" />
       <workItem from="1561960587847" duration="4715000" />
+      <workItem from="1562033860909" duration="10047000" />
+      <workItem from="1562049814318" duration="353000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_web_01_userRegister_py - 2019.06.26 at 16h 13m 11s.xml">
-      <configuration name="Unittests in test_web_01_userRegister.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test_web_03_verifiedUserAuth_py - 2019.07.02 at 12h 43m 16s.xml">
+      <configuration name="Unittests in test_web_03_verifiedUserAuth.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_web_01_userRegister_py - 2019.06.26 at 16h 15m 50s.xml">
-      <configuration name="Unittests in test_web_01_userRegister.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test_web_03_verifiedUserAuth_py - 2019.07.02 at 12h 44m 44s.xml">
+      <configuration name="Unittests in test_web_03_verifiedUserAuth.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_web_01_userRegister_py - 2019.06.26 at 16h 33m 02s.xml">
-      <configuration name="Unittests in test_web_01_userRegister.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test_web_03_verifiedUserAuth_py - 2019.07.02 at 14h 13m 12s.xml">
+      <configuration name="Unittests in test_web_03_verifiedUserAuth.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_web_01_userRegister_py - 2019.06.26 at 16h 43m 10s.xml">
-      <configuration name="Unittests in test_web_01_userRegister.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test_web_03_verifiedUserAuth_py - 2019.07.02 at 14h 17m 00s.xml">
+      <configuration name="Unittests in test_web_03_verifiedUserAuth.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_web_01_userRegister_py - 2019.06.26 at 16h 43m 20s.xml">
-      <configuration name="Unittests in test_web_01_userRegister.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test_web_03_verifiedUserAuth_py - 2019.07.02 at 14h 18m 47s.xml">
+      <configuration name="Unittests in test_web_03_verifiedUserAuth.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_web_01_userRegister_py - 2019.06.26 at 16h 44m 11s.xml">
-      <configuration name="Unittests in test_web_01_userRegister.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test_web_03_verifiedUserAuth_py - 2019.07.02 at 14h 23m 47s.xml">
+      <configuration name="Unittests in test_web_03_verifiedUserAuth.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_web_01_userRegister_py - 2019.06.26 at 17h 55m 50s.xml">
-      <configuration name="Unittests in test_web_01_userRegister.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test_web_03_verifiedUserAuth_py - 2019.07.02 at 14h 29m 53s.xml">
+      <configuration name="Unittests in test_web_03_verifiedUserAuth.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_web_01_userRegister_py - 2019.06.26 at 18h 01m 34s.xml">
-      <configuration name="Unittests in test_web_01_userRegister.py" configurationId="tests" />
+    <history-entry file="Unittests_for_test_web_03_verifiedUserAuth_HandleverifiedUserAuth_test_case_01 - 2019.07.02 at 14h 32m 18s.xml">
+      <configuration name="Unittests for test_web_03_verifiedUserAuth.HandleverifiedUserAuth.test_case_01" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_web_01_userRegister_py - 2019.06.26 at 18h 04m 50s.xml">
-      <configuration name="Unittests in test_web_01_userRegister.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test_web_03_verifiedUserAuth_py - 2019.07.02 at 14h 36m 10s.xml">
+      <configuration name="Unittests in test_web_03_verifiedUserAuth.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_web_01_userRegister_py - 2019.06.26 at 18h 05m 42s.xml">
-      <configuration name="Unittests in test_web_01_userRegister.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test_web_03_verifiedUserAuth_py - 2019.07.02 at 14h 36m 47s.xml">
+      <configuration name="Unittests in test_web_03_verifiedUserAuth.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25978000" />
+    <option name="totallyTimeSpent" value="36378000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -327,15 +376,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="140" y="0" width="1418" height="866" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16568483" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24228792" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.37107778" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39958805" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4037685" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.58008075" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32955715" />
@@ -425,30 +475,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
-          <folding>
-            <element signature="e#25#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/handle_webservice01.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
           <caret line="92" column="31" lean-forward="true" selection-start-line="92" selection-start-column="31" selection-end-line="92" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cases/test_web_01_sendMCode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2079">
-          <caret line="88" column="26" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="26" />
-          <folding>
-            <element signature="e#110#140#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -480,10 +510,75 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cases/test_web_01_sendMCode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
+          <folding>
+            <element signature="e#110#140#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cases/test_web_02_userRegister.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="78" column="19" lean-forward="true" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python37/Lib/json/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="347" selection-start-line="347" selection-end-line="347" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reports/test_result_20190702143901.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cases/test_web_03_verifiedUserAuth.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1458">
+          <caret line="65" column="78" selection-start-line="65" selection-start-column="78" selection-end-line="65" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ddt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4293">
+          <caret line="164" selection-start-line="164" selection-end-line="164" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python37/Lib/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17523">
+          <caret line="662" selection-start-line="662" selection-end-line="662" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python37/Lib/unittest/suite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3186">
+          <caret line="121" selection-start-line="121" selection-end-line="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/handle_webmusql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3645">
+          <caret line="138" column="49" lean-forward="true" selection-start-line="138" selection-start-column="49" selection-end-line="138" selection-end-column="49" />
+          <folding>
+            <element signature="e#42#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/handle_webservice.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+        <state relative-caret-position="1566">
+          <caret line="62" column="58" lean-forward="true" selection-start-line="62" selection-start-column="58" selection-end-line="63" selection-end-column="17" />
           <folding>
             <element signature="e#114#125#0" expanded="true" />
           </folding>
@@ -492,8 +587,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/handle_context.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+        <state relative-caret-position="4104">
+          <caret line="155" column="32" selection-start-line="155" selection-start-column="8" selection-end-line="155" selection-end-column="32" />
           <folding>
             <element signature="n#!!doc" />
             <element signature="e#42#51#0" expanded="true" />
@@ -501,26 +596,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cases/test_web_02_userRegister.py">
+    <entry file="file://$PROJECT_DIR$/run_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="61" column="38" lean-forward="true" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cases/test_web_03_verifiedUserAuth.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27">
-          <caret line="37" column="16" lean-forward="true" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/handle_webmusql.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="162" column="20" lean-forward="true" selection-start-line="162" selection-start-column="20" selection-end-line="162" selection-end-column="20" />
+        <state relative-caret-position="532">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
-            <element signature="e#42#56#0" expanded="true" />
+            <element signature="e#25#54#0" expanded="true" />
           </folding>
         </state>
       </provider>

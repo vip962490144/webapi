@@ -47,7 +47,7 @@ class HandlesendMCode(unittest.TestCase):
         do_log.info("\nRunning Test Method: {}".format(inspect.stack()[0][3]))
         case_id = data_ceses.case_id
         msg = data_ceses.title
-        data_case = HandleContext.register_parameterization(data_ceses.data)
+        data_case = HandleContext.web_api_parameterization(data_ceses.data)
         new_data = json.loads(data_case)
         do_client = HandleWebservice()
         actual = do_client(method=data_ceses.method, data=new_data)

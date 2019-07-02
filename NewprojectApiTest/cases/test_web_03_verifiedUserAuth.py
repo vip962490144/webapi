@@ -16,7 +16,7 @@ from scripts.handle_context import HandleContext
 from scripts.handle_webmusql import HandleWebMysql
 from scripts.handle_webservice import HandleWebservice
 
-do_excel = HandleExcel(TEST_DATAS_FILE_PATH, "verifiedUserAuth")
+do_excel = HandleExcel(TEST_DATAS_FILE_PATH, "verifyUserAuth")
 
 
 @ddt
@@ -48,7 +48,7 @@ class HandleverifiedUserAuth(unittest.TestCase):
         do_log.info("\nRunning Test Method: {}".format(inspect.stack()[0][3]))
         case_id = data_ceses.case_id
         msg = data_ceses.title
-        case_data = HandleContext.register_parameterization(data_ceses.data)
+        case_data = HandleContext.web_api_parameterization(data_ceses.data)
         new_data = json.loads(case_data)
         do_client = HandleWebservice()
         method = data_ceses.method

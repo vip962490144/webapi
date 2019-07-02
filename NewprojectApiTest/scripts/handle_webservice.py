@@ -23,7 +23,7 @@ class HandleWebservice:
         """
         if method in ("sendMCode", ):
             url = "http://120.24.235.105:9010/sms-service-war-1.0/ws/smsFacade.ws?wsdl"
-        elif method in ("userRegister", "verifiedUserAuth", "bindBankCard"):
+        elif method in ("userRegister", "verifyUserAuth", "bindBankCard"):
             url = "http://120.24.235.105:9010/finance-user_info-war-1.0/ws/financeUserInfoFacade.ws?wsdl"
         else:
             do_log.error("请求方法【{}】，有误！".format(method))
@@ -56,8 +56,11 @@ class HandleWebservice:
 if __name__ == '__main__':
     str1 = {"client_ip": "192.168.3.1", "tmpl_id": "2", "mobile": "18322221234"}
     str2 = '{"status": 0, "code": "20118", "data": null, "msg": "请输入数字"}'
+    str3 = {"uid": 128736678581, "true_name": "小王", "cre_id": "431322197703092237"}
     do_client = HandleWebservice()
-    actual = do_client(method="sendMCode", data=str1)
+    # actual = do_client(method="sendMCode", data=str1)
+    # actual = do_client(method="userRegister", data=str2)
+    actual = do_client(method="verifyUserAuth", data=str3)
     print(actual)
     print(type(actual))
 

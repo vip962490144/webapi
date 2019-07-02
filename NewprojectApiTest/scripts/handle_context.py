@@ -24,6 +24,7 @@ class HandleContext:
     not_exited_loan_id_pattern = re.compile(r"\$\{not_exited_loan_id}")
     exited_fverify_code_pattern = re.compile(r"\$\{fverify_code}")
     exited_mobile_tel_pattern = re.compile(r"\$\{mobile_tel}")
+    exited_uid_pattern = re.compile(r"\$\{exited_uid}")
 
     @classmethod
     def not_exited_replace(cls, data):
@@ -117,6 +118,20 @@ class HandleContext:
         return data
 
     @classmethod
+    def exited_uid(cls, data):
+        """
+        替换，放入验证码
+        :param data:
+        :return:
+        """
+        do_mysql = HandleWebMysql()
+        if re.search(cls.exited_uid_pattern, data):
+            exited_uid = str(do_mysql.existed_fuser_id())
+            data = re.sub(cls.exited_uid_pattern, exited_uid, data)
+        do_mysql.close()
+        return data
+
+    @classmethod
     def register_parameterization(cls, data):
         """
         实现注册功能的参数化
@@ -134,8 +149,27 @@ class HandleContext:
         data = cls.borrow_user_replace(data)
         # 在替换标的id信息。
         data = cls.load_id_replace(data)
+
+        return data
+
+    @classmethod
+    def web_api_parameterization(cls, data):
+        """
+        实现注册功能的参数化
+        :param data:
+        :return:
+        """
+        # 替换不存在的手机号
+        data = cls.not_exited_replace(data)
+        # 替换不存在的用户名
+        data = cls.not_exited_user_id_replace(data)
+        # 替换存在的手机号
         data = cls.exited_mobile_tel(data)
+        # 替换验证码
         data = cls.exited_fverify_code(data)
+        # 替换uid
+        data = cls.exited_uid(data)
+
         return data
 
 

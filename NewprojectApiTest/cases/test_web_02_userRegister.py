@@ -47,7 +47,7 @@ class HandleuserRegister(unittest.TestCase):
         do_log.info("\nRunning Test Method: {}".format(inspect.stack()[0][3]))
         case_id = data_ceses.case_id
         msg = data_ceses.title
-        case_data = HandleContext.register_parameterization(data_ceses.data)
+        case_data = HandleContext.web_api_parameterization(data_ceses.data)
         new_data = json.loads(case_data)
         do_client = HandleWebservice()
         method = data_ceses.method

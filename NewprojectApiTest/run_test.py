@@ -12,7 +12,7 @@ from scripts.handle_user import genrate_users_config
 if not os.path.exists(CONFIG_USER_FILE_PATH):
     genrate_users_config()
 
-data_discover = unittest.defaultTestLoader.discover(CASES_DIR, pattern="test_*.py")
+data_discover = unittest.defaultTestLoader.discover(CASES_DIR, pattern="test_web_*.py")
 
 report_html_name = os.path.join(REPORTS_DIR, do_config("file path", "report_html_name"))
 report_html_name_full = report_html_name + "_" + datetime.strftime(datetime.now(), "%Y%m%d%H%M%S") + ".html"
